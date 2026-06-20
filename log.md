@@ -43,3 +43,7 @@ Reusable core tool `tools/chat-dump/dump_chat.py` (stdlib only, run via uv) conv
 session `.jsonl` → readable markdown (human+assistant text; skips thinking/tool-noise/system-reminders).
 Output goes to gitignored `intake/chats/` (public repo + possible secrets → local-only). Verified on
 this session (101 turns). Next: optional Stop hook to auto-dump every session.
+
+## [2026-06-20] decision | Reverted chat-dump; chat logs are OUT of scope
+On reflection (Visionary's call), conversation logs should not be part of the knowledge base. Removed
+the `tools/chat-dump/` tool, the `intake/chats/` folder, and its gitignore entry. No Stop hook wired.

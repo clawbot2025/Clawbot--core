@@ -15,7 +15,6 @@
 ## intake/ — raw dump (pre-triage)
 - `scouted-skills-2026-06-20.md` — GitHub scout of reusable skills/tools (Tier 1/2). Untriaged.
 - `session-2026-06-20-context.md` — AutoTube end-goal + verified HeyGen v3 research. Mostly project-bound → clawbot-autotube.
-- `chats/` — auto-dumped conversation transcripts (gitignored, local-only; recallable source).
 
 ## docs/ — vetted raw reference (core tooling)
 - _(none yet)_ — e.g. uv, Spec Kit, Claude Code.
@@ -24,7 +23,7 @@
 - _(none yet)_
 
 ## tools/
-- `chat-dump/` — convert a Claude Code session `.jsonl` → markdown into `intake/chats/` (local-only).
+- _(none yet)_
 
 ## memory/ — the wiki
 - _(none yet)_
