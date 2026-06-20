@@ -1,6 +1,9 @@
 # Heavy / third-party clones staged for evaluation — keep out of the core repo
 intake/clones/
 
+# Local-only chat transcripts (may contain secrets; this is a PUBLIC repo) — recall locally, never publish
+intake/chats/
+
 # Secrets — never commit
 .env
 .secrets/

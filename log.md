@@ -37,3 +37,9 @@ Filed two raw notes: `scouted-skills-2026-06-20.md` (GitHub scout of reusable sk
 `session-2026-06-20-context.md` (AutoTube end-goal + verified HeyGen v3/webhook research, mostly
 project-bound for clawbot-autotube). Untriaged — organize into wiki/skills/tools and route project
 material to the AutoTube repo next.
+
+## [2026-06-20] ingest | Built chat-dump tool; dumping conversations into intake/chats
+Reusable core tool `tools/chat-dump/dump_chat.py` (stdlib only, run via uv) converts a Claude Code
+session `.jsonl` → readable markdown (human+assistant text; skips thinking/tool-noise/system-reminders).
+Output goes to gitignored `intake/chats/` (public repo + possible secrets → local-only). Verified on
+this session (101 turns). Next: optional Stop hook to auto-dump every session.
