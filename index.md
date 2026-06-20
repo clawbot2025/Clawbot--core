@@ -3,33 +3,38 @@
 > Read this after `CLAUDE.md`. A one-line catalog of everything here. Updated on every ingest.
 
 ## ▶ Current status
-- **Foundation:** Karpathy core structure + `constitution.md` (governing principles) in place.
-- **Toolchain:** uv 0.11.23 + Python 3.12.13 installed (user-space, no root).
-- **Spec Kit:** decided — adopt at the *project* layer when we build the first project; not installed yet.
-- **Next:** collect/create the first reusable skills & tools (and resume AutoTube as its own repo when ready).
+- **Foundation:** Karpathy LLM Wiki pattern (verified verbatim) instantiated — schema + intake/wiki/outputs + index/log.
+- **Toolchain:** uv 0.11.23 + Python 3.12.13 (user-space, no root).
+- **Spec Kit:** decided — adopt at the *project* layer; not installed yet.
+- **Next:** start collecting into `intake/`, then triage into `docs/` `skills/` `tools/` `memory/`.
 
 ## Foundation docs
-- `CLAUDE.md` — schema / operating manual (how the wiki works).
-- `constitution.md` — governing principles for how we build.
+- `CLAUDE.md` — schema / operating manual.
+- `constitution.md` — governing principles.
 
-## Skills
-- _(none yet)_ — see `skills/`
+## intake/ — raw dump (pre-triage)
+- _(empty)_ — drop collected candidates here; triage moves them out.
 
-## Tools
-- _(none yet)_ — see `tools/`
+## docs/ — vetted raw reference (core tooling)
+- _(none yet)_ — e.g. uv, Spec Kit, Claude Code.
 
-## Docs (raw reference for core tooling)
-- _(none yet)_ — see `docs/` (e.g. uv, Spec Kit, Claude Code)
+## skills/
+- _(none yet)_
 
-## Memory (wiki notes)
-- _(none yet)_ — see `memory/`
+## tools/
+- _(none yet)_
+
+## memory/ — the wiki
+- _(none yet)_
+
+## outputs/ — query results filed back
+- _(none yet)_
 
 ## Projects (separate repos that consume this core)
 - **clawbot-autotube** — AI-news YouTube pipeline. Paused; resume after the foundation is solid.
-  Its HeyGen/YouTube research is parked for that repo, kept out of core on purpose.
 
 ## Key decisions (full history in `log.md`)
 - Build the reusable foundation before any project.
-- Foundation follows Karpathy's LLM Wiki pattern.
+- Foundation follows Karpathy's LLM Wiki pattern (verified verbatim from the gist).
 - Core stays project-agnostic; projects are separate repos that consume it.
-- Spec Kit: adopt at the project layer, when we build a project (not bolted onto core).
+- Spec Kit: adopt at the project layer, not bolted onto core.

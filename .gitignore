@@ -1,0 +1,16 @@
+# Heavy / third-party clones staged for evaluation — keep out of the core repo
+intake/clones/
+
+# Secrets — never commit
+.env
+.secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

@@ -1,7 +1,7 @@
 # Core — Schema & Operating Manual
 
 > This is the schema file for our core knowledge base, following Karpathy's "LLM Wiki" pattern
-> (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+> (gist `442a6bf…`, file `llm-wiki.md` — read verbatim 2026-06-20).
 > **Read this first, then `index.md`.** It defines how this repo is structured and how I (the agent)
 > maintain it so nothing gets lost between sessions.
 
@@ -19,10 +19,12 @@ building projects (e.g. AutoTube) starts from a solid base instead of from scrat
 - `CLAUDE.md` — this schema (read first).
 - `index.md`  — catalog of everything; the table of contents (read second).
 - `log.md`    — append-only chronological record of activity & decisions.
+- `intake/`   — RAW dump (pre-triage); collected stuff lands here first, messy on purpose (= Karpathy "raw sources").
+- `docs/`     — vetted RAW reference for *core* tooling, by source (e.g. `docs/uv/`, `docs/spec-kit/`).
+- `memory/`   — the **wiki**: atomic, interlinked notes the agent maintains (= Karpathy "the wiki").
 - `skills/`   — collected or created Claude Code skills (`SKILL.md` packs). Reusable capabilities.
-- `tools/`    — scripts/CLIs we pull in or build.
-- `docs/`     — RAW official reference for *core* tooling, by source (e.g. `docs/uv/`, `docs/spec-kit/`).
-- `memory/`   — the wiki: atomic notes, decisions, concepts (Zettelkasten-style).
+- `tools/`    — scripts/CLIs we pull in or build (= Karpathy "optional CLI tools").
+- `outputs/`  — query results filed back (comparisons, briefs, decks) so they don't vanish into chat.
 
 > **Core is project-agnostic.** Projects (e.g. AutoTube) are **separate repos** that *consume* this core —
 > they are not stored inside it.
@@ -44,8 +46,11 @@ building projects (e.g. AutoTube) starts from a solid base instead of from scrat
 - `docs/` mirrors the source; if the source changes, re-fetch and note it in `log.md` — don't hand-edit to "correct."
 
 ## Operations (Karpathy: ingest / query / lint)
-- **INGEST** — when new material arrives (a fetched doc, a decision, a skill): file it, update `index.md`, append a line to `log.md`.
-- **QUERY** — to answer or build: read `index.md` first, then the relevant `docs/` + `memory/` pages, then only the raw artifacts you need.
+- **INGEST (collect → triage → file)** — collected material lands in `intake/` (no judgment at drop time).
+  Triage each item — *relevant? proven/quality? what is it?* — then **promote** to `docs/` (reference),
+  `skills/`, `tools/`, or `memory/` (synthesized note), **or drop** it. Then update `index.md` and append to `log.md`.
+- **QUERY** — to answer or build: read `index.md` first, then the relevant `docs/` + `memory/` pages, then only
+  the raw artifacts you need. Keepable answers get filed into `outputs/` (and linked from `memory/`).
 - **LINT** — periodically check for contradictions, stale claims, orphan pages, and missing cross-links.
 
 ## Navigation rule (how I avoid getting lost)
