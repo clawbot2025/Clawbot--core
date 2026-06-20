@@ -20,3 +20,10 @@ AutoTube research from this session is parked for the AutoTube repo when we resu
 ## [2026-06-20] setup | Installed toolchain (user-space, no root)
 uv 0.11.23 + CPython 3.12.13 via uv. apt/sudo unavailable (no passwordless root); ffmpeg/git-lfs
 deferred until a project needs them.
+
+## [2026-06-20] decision | Adopt Spec Kit at the project layer; add core constitution
+Assessed Spec Kit (github/spec-kit). Verdict: strong fit, but it is a per-project build process, not
+a knowledge base — so adopt it when we scaffold the first project (AutoTube), not bolted onto core.
+Pulled its "constitution" idea forward now as `constitution.md`: project-agnostic governing
+principles (official-sources-only, build-on-proven, proper-over-fast, spec-before-code, core/project
+separation, persist-knowledge, safe/honest/tidy). Roles set: Visionary + Lead Dev.
