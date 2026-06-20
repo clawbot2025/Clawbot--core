@@ -22,5 +22,15 @@ status: untriaged
 - **multica-ai/andrej-karpathy-skills** — Karpathy-derived CLAUDE.md behavior (no license listed). https://github.com/multica-ai/andrej-karpathy-skills
 - **rohitg00/agentmemory** (Apache-2.0) — benchmarked persistent memory; compare vs our markdown wiki. https://github.com/rohitg00/agentmemory
 
+## Reference repos given by the Visionary (infrastructure design)
+- **safishamsi/graphify** (MIT, YC S26, PyPI `graphifyy`, CLI `graphify`) — a "memory layer": maps a
+  project (code, docs, PDFs, images, schemas) into a **queryable knowledge graph** so the agent queries
+  the graph instead of re-reading files (token savings). Installs as a Claude Code skill (`graphify install`);
+  output is per-project (`graphify-out/graph.json|html` + `GRAPH_REPORT.md`). Needs Python/uv (have it).
+  **Fit:** complements our markdown wiki — wiki = *what was decided* (declarative); Graphify = *how the
+  code is structured* (structural). A reusable **core skill**, but its value only kicks in on a real
+  codebase. **Recommendation:** adopt/install at **AutoTube kickoff** (first real codebase); premature now.
+  https://github.com/safishamsi/graphify
+
 ## Parked
-- safishamsi/graphify (code knowledge graph — later, for big codebases). Multi-agent harnesses (e.g. ruvnet/ruflo — premature).
+- Multi-agent harnesses (e.g. ruvnet/ruflo) — premature.

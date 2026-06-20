@@ -47,3 +47,9 @@ this session (101 turns). Next: optional Stop hook to auto-dump every session.
 ## [2026-06-20] decision | Reverted chat-dump; chat logs are OUT of scope
 On reflection (Visionary's call), conversation logs should not be part of the knowledge base. Removed
 the `tools/chat-dump/` tool, the `intake/chats/` folder, and its gitignore entry. No Stop hook wired.
+
+## [2026-06-20] ingest | Reviewed Graphify (3rd reference repo) — captured
+Read safishamsi/graphify from source (MIT, YC S26). A code/corpus → queryable knowledge graph
+("memory layer") installed as a skill; complements our markdown wiki (declarative) with a structural
+code map. Reusable core skill, but only earns its keep on a real codebase. Decision: adopt at AutoTube
+kickoff, not now. Captured in `intake/scouted-skills-2026-06-20.md`.
