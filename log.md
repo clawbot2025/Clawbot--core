@@ -31,3 +31,9 @@ raw sources + wiki + schema; ops ingest/query/lint; nav `index.md` + `log.md`; "
 Aligned our instantiation: added `intake/` (raw dump / pre-triage = "raw sources") and `outputs/`
 (query results filed back); `memory/` stays as the wiki; `docs/` = vetted raw reference. Triage flow
 written into `CLAUDE.md`. `intake/clones/` gitignored to keep third-party code out of the repo.
+
+## [2026-06-20] ingest | First dumps into intake/
+Filed two raw notes: `scouted-skills-2026-06-20.md` (GitHub scout of reusable skills/tools) and
+`session-2026-06-20-context.md` (AutoTube end-goal + verified HeyGen v3/webhook research, mostly
+project-bound for clawbot-autotube). Untriaged — organize into wiki/skills/tools and route project
+material to the AutoTube repo next.
