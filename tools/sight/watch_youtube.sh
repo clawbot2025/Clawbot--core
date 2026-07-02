@@ -31,7 +31,20 @@ RESP=$(curl -s --max-time 280 \
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}" \
   -H "Content-Type: application/json" -X POST -d "$PAYLOAD")
 
-echo "$RESP" | jq -r '.candidates[0].content.parts[0].text // .error.message // "PARSE FAIL"'
+# API errors (429 quota, depleted credits, 403 blocked key, ...) must FAIL,
+# not print the error as if it were the answer (learned 2026-07-02: depleted-
+# credit messages got written into an intel brief as "analysis").
+ERR_MSG=$(echo "$RESP" | jq -r '.error.message // empty')
+if [ -n "$ERR_MSG" ]; then
+  ERR_CODE=$(echo "$RESP" | jq -r '.error.code // "?"')
+  ERR_STATUS=$(echo "$RESP" | jq -r '.error.status // "?"')
+  echo "GEMINI API ERROR $ERR_CODE ($ERR_STATUS): $ERR_MSG" >&2
+  # exit 29 for rate/quota-type errors so callers can retry-later; 1 otherwise
+  [ "$ERR_CODE" = "429" ] && exit 29
+  exit 1
+fi
+
+echo "$RESP" | jq -r '.candidates[0].content.parts[0].text // "PARSE FAIL"'
 FR=$(echo "$RESP" | jq -r '.candidates[0].finishReason // "?"')
 [ "$FR" = "MAX_TOKENS" ] && echo "[warn: truncated at MAX_TOKENS — re-run with a higher 3rd arg]" >&2
 exit 0
