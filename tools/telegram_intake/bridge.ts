@@ -97,7 +97,9 @@ async function main(): Promise<void> {
   process.stderr.write(`telegram-intake: polling (offset=${offset})\n`)
   for (;;) {
     try {
-      const res = await fetch(`${API}/getUpdates?timeout=50&offset=${offset}`, { signal: AbortSignal.timeout(60000) })
+      // long-poll 25s, abort at 40s — the old 50/60 pair kept tripping TimeoutError
+      // on slow egress, burning polls (Visionary: "not getting my messages")
+      const res = await fetch(`${API}/getUpdates?timeout=25&offset=${offset}`, { signal: AbortSignal.timeout(40000) })
       const data = await res.json()
       if (data?.error_code === 409) { claimSlot(); await new Promise(r => setTimeout(r, 1500)); continue }
       if (!data?.ok) { await new Promise(r => setTimeout(r, 2000)); continue }
