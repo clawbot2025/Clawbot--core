@@ -1,0 +1,37 @@
+{
+  "product": "Canva (template gallery)",
+  "url": "https://www.canva.com/templates/",
+  "viewport": { "width": 608, "height": 1080 },
+  "steps": [
+    {
+      "action": "goto",
+      "url": "https://www.canva.com/templates/",
+      "secs": 6,
+      "narration": "Need a design for literally anything? You've got Canva, and honestly, most people are massively underusing it."
+    },
+    {
+      "action": "scroll",
+      "px": 800,
+      "secs": 9,
+      "narration": "This is just the free template gallery, and every single one is built by real designers, presentations, video covers, social posts, thumbnails, all of it."
+    },
+    {
+      "action": "scroll",
+      "px": 850,
+      "secs": 8,
+      "narration": "Hundreds of finished layouts, one click to make any of them yours, and you need zero design skills to do it."
+    },
+    {
+      "action": "scroll",
+      "px": 850,
+      "secs": 9,
+      "narration": "So you never stare at a blank page again, you start from something that already looks professional and just swap in your own stuff."
+    },
+    {
+      "action": "scroll",
+      "px": 350,
+      "secs": 5,
+      "narration": "That's your unfair advantage. Follow MOTO NEWS, daily AI that actually matters."
+    }
+  ]
+}
