@@ -1,0 +1,44 @@
+{
+  "product": "Pexels Videos",
+  "url": "https://www.pexels.com/videos/",
+  "viewport": { "width": 608, "height": 1080 },
+  "steps": [
+    {
+      "action": "goto",
+      "url": "https://www.pexels.com/videos/",
+      "secs": 4,
+      "narration": "This site gives you unlimited 4K b-roll — completely free."
+    },
+    {
+      "action": "type",
+      "selector": "input[placeholder*='Search' i]",
+      "text": "city night aerial",
+      "enter": true,
+      "secs": 4,
+      "narration": "It's Pexels. Hundreds of thousands of pro clips, no watermark, no credit card, no catch. Type what you need — city night aerial."
+    },
+    {
+      "action": "scroll",
+      "px": 1400,
+      "secs": 7,
+      "narration": "And boom — instant drone-grade footage that most creators pay hundreds of dollars for. Every single clip here is free to download."
+    },
+    {
+      "action": "click",
+      "selector": "a[href^='/video/']",
+      "secs": 0.5,
+      "narration": "Open any clip you like."
+    },
+    {
+      "action": "scroll",
+      "px": 1000,
+      "secs": 8,
+      "narration": "One click and it's yours in full 4K — fully licensed for client work, YouTube, ads, whatever you're building. No invoice ever shows up."
+    },
+    {
+      "action": "wait",
+      "secs": 3,
+      "narration": "Follow MOTO NEWS — daily AI that actually matters."
+    }
+  ]
+}
