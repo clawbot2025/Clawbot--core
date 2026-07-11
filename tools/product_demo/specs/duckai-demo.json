@@ -1,0 +1,44 @@
+{
+  "product": "Duck.ai (DuckDuckGo AI Chat)",
+  "url": "https://duck.ai",
+  "viewport": { "width": 608, "height": 1080 },
+  "steps": [
+    {
+      "action": "goto",
+      "url": "https://duck.ai",
+      "secs": 4,
+      "narration": "Everyone's paying twenty dollars a month for ChatGPT, but you really don't have to."
+    },
+    {
+      "action": "type",
+      "selector": "[contenteditable=\"true\"], textarea",
+      "text": "best AI coding tools 2026",
+      "enter": true,
+      "secs": 5,
+      "narration": "This is Duck A.I., private, no-login AI chat, and it's completely free. Watch, ask it anything, like the best AI coding tools in 2026."
+    },
+    {
+      "action": "click",
+      "selector": "button:has-text(\"Continue\")",
+      "secs": 2.5,
+      "narration": "One tap, and a real frontier model gets straight to work."
+    },
+    {
+      "action": "click",
+      "selector": "button:has-text(\"Got It\")",
+      "secs": 3,
+      "narration": "No account, no credit card, and nothing you type is ever tracked or trained on."
+    },
+    {
+      "action": "scroll",
+      "px": 520,
+      "secs": 6,
+      "narration": "And there's your answer, Copilot, Cursor, Windsurf, Claude Code, ranked and explained in seconds."
+    },
+    {
+      "action": "wait",
+      "secs": 3.5,
+      "narration": "Follow MOTO NEWS, daily AI that actually matters."
+    }
+  ]
+}
