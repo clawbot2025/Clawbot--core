@@ -14,3 +14,7 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+
+# rendered media artifacts
+tools/**/*.mp4
+graphify-out/backups/

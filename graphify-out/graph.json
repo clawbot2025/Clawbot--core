@@ -1,0 +1,2094 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "karpathy_wiki_structure",
+        "label": "Karpathy LLM Wiki Implementation",
+        "nodes": [
+          "core_claude",
+          "core_index",
+          "core_log",
+          "core_intake_readme",
+          "core_docs_readme",
+          "core_memory_readme",
+          "core_outputs_readme"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "core/CLAUDE.md"
+      },
+      {
+        "id": "core_toolset",
+        "label": "Core Video Automation Tools",
+        "nodes": [
+          "core_tools_make_short_readme",
+          "core_tools_product_demo_readme",
+          "core_tools_sight_readme"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "core/tools/README.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "build_catalog.sh",
+      "file_type": "code",
+      "source_file": "tools/catalog/build_catalog.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "tools_catalog_build_catalog",
+      "community": 9,
+      "norm_label": "build_catalog.sh"
+    },
+    {
+      "label": "build_catalog.sh script",
+      "file_type": "code",
+      "source_file": "tools/catalog/build_catalog.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "tools_catalog_build_catalog_sh__entry",
+      "community": 9,
+      "norm_label": "build_catalog.sh script"
+    },
+    {
+      "label": "desc()",
+      "file_type": "code",
+      "source_file": "tools/catalog/build_catalog.sh",
+      "source_location": "L10",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "_origin": "ast",
+      "id": "tools_catalog_build_catalog_desc",
+      "community": 9,
+      "norm_label": "desc()"
+    },
+    {
+      "label": "comment_bot.py",
+      "file_type": "code",
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_comment_bot_comment_bot",
+      "community": 2,
+      "norm_label": "comment_bot.py"
+    },
+    {
+      "label": "creds()",
+      "file_type": "code",
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tools_comment_bot_comment_bot_creds",
+      "community": 2,
+      "norm_label": "creds()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "tools_comment_bot_comment_bot_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "episode.py",
+      "file_type": "code",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_make_episode_episode",
+      "community": 5,
+      "norm_label": "episode.py"
+    },
+    {
+      "label": "key()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "tools_make_episode_episode_key",
+      "community": 5,
+      "norm_label": "key()"
+    },
+    {
+      "label": "sh()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tools_make_episode_episode_sh",
+      "community": 5,
+      "norm_label": "sh()"
+    },
+    {
+      "label": "ff()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tools_make_episode_episode_ff",
+      "community": 5,
+      "norm_label": "ff()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "tools_make_episode_episode_main",
+      "community": 5,
+      "norm_label": "main()"
+    },
+    {
+      "label": "loop.py",
+      "file_type": "code",
+      "source_file": "tools/make_episode/loop.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_make_episode_loop",
+      "community": 10,
+      "norm_label": "loop.py"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/loop.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tools_make_episode_loop_run",
+      "community": 10,
+      "norm_label": "run()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/loop.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tools_make_episode_loop_main",
+      "community": 10,
+      "norm_label": "main()"
+    },
+    {
+      "label": "write_script.py",
+      "file_type": "code",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_make_episode_write_script",
+      "community": 6,
+      "norm_label": "write_script.py"
+    },
+    {
+      "label": "key()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "tools_make_episode_write_script_key",
+      "community": 6,
+      "norm_label": "key()"
+    },
+    {
+      "label": "anthropic()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tools_make_episode_write_script_anthropic",
+      "community": 6,
+      "norm_label": "anthropic()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "tools_make_episode_write_script_main",
+      "community": 6,
+      "norm_label": "main()"
+    },
+    {
+      "label": "make_ass.py",
+      "file_type": "code",
+      "source_file": "tools/make_short/make_ass.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_make_short_make_ass",
+      "community": 13,
+      "norm_label": "make_ass.py"
+    },
+    {
+      "label": "fmt()",
+      "file_type": "code",
+      "source_file": "tools/make_short/make_ass.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "tools_make_short_make_ass_fmt",
+      "community": 13,
+      "norm_label": "fmt()"
+    },
+    {
+      "label": "make_short.sh",
+      "file_type": "code",
+      "source_file": "tools/make_short/make_short.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "tools_make_short_make_short",
+      "community": 14,
+      "norm_label": "make_short.sh"
+    },
+    {
+      "label": "make_short.sh script",
+      "file_type": "code",
+      "source_file": "tools/make_short/make_short.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "tools_make_short_make_short_sh__entry",
+      "community": 14,
+      "norm_label": "make_short.sh script"
+    },
+    {
+      "label": "scene_plan.py",
+      "file_type": "code",
+      "source_file": "tools/make_short/scene_plan.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_make_short_scene_plan",
+      "community": 15,
+      "norm_label": "scene_plan.py"
+    },
+    {
+      "label": "flush()",
+      "file_type": "code",
+      "source_file": "tools/make_short/scene_plan.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "tools_make_short_scene_plan_flush",
+      "community": 15,
+      "norm_label": "flush()"
+    },
+    {
+      "label": "demo_recorder.mjs",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder",
+      "community": 1,
+      "norm_label": "demo_recorder.mjs"
+    },
+    {
+      "label": "require",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_require",
+      "community": 1,
+      "norm_label": "require"
+    },
+    {
+      "label": "{ chromium }",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_chromium",
+      "community": 1,
+      "norm_label": "{ chromium }"
+    },
+    {
+      "label": "spec",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_spec",
+      "community": 1,
+      "norm_label": "spec"
+    },
+    {
+      "label": "recDir",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_recdir",
+      "community": 1,
+      "norm_label": "recdir"
+    },
+    {
+      "label": "rand()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_rand",
+      "community": 1,
+      "norm_label": "rand()"
+    },
+    {
+      "label": "dismissConsent()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_dismissconsent",
+      "community": 1,
+      "norm_label": "dismissconsent()"
+    },
+    {
+      "label": "smoothMoveTo()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_smoothmoveto",
+      "community": 1,
+      "norm_label": "smoothmoveto()"
+    },
+    {
+      "label": "smoothScroll()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_smoothscroll",
+      "community": 1,
+      "norm_label": "smoothscroll()"
+    },
+    {
+      "label": "t0",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_t0",
+      "community": 1,
+      "norm_label": "t0"
+    },
+    {
+      "label": "now()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_now",
+      "community": 1,
+      "norm_label": "now()"
+    },
+    {
+      "label": "timeline",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_timeline",
+      "community": 1,
+      "norm_label": "timeline"
+    },
+    {
+      "label": "vids",
+      "file_type": "code",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "tools_product_demo_demo_recorder_vids",
+      "community": 1,
+      "norm_label": "vids"
+    },
+    {
+      "label": "make_demo.py",
+      "file_type": "code",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo",
+      "community": 2,
+      "norm_label": "make_demo.py"
+    },
+    {
+      "label": "_ff()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_ff",
+      "community": 2,
+      "norm_label": "_ff()"
+    },
+    {
+      "label": "narration_segments()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_narration_segments",
+      "community": 2,
+      "norm_label": "narration_segments()"
+    },
+    {
+      "label": "fit_step()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_fit_step",
+      "community": 2,
+      "norm_label": "fit_step()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "path",
+      "community": 2,
+      "norm_label": "path"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "make_demo.py \u2014 scripted browser session -> 9:16 product-demo SHORT.  Pipeline:",
+      "file_type": "rationale",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_rationale_1",
+      "community": 2,
+      "norm_label": "make_demo.py \u2014 scripted browser session -> 9:16 product-demo short.  pipeline:"
+    },
+    {
+      "label": "Split the single VO alignment back into per-step [t0,t1] narration spans.      W",
+      "file_type": "rationale",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_rationale_46",
+      "community": 2,
+      "norm_label": "split the single vo alignment back into per-step [t0,t1] narration spans.      w"
+    },
+    {
+      "label": "Cut [f_start,f_end] and fit it to `target` secs: speed within 0.85x-1.3x,     ov",
+      "file_type": "rationale",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "tools_product_demo_make_demo_rationale_64",
+      "community": 2,
+      "norm_label": "cut [f_start,f_end] and fit it to `target` secs: speed within 0.85x-1.3x,     ov"
+    },
+    {
+      "label": "run.sh",
+      "file_type": "code",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "tools_product_demo_run",
+      "community": 7,
+      "norm_label": "run.sh"
+    },
+    {
+      "label": "run.sh script",
+      "file_type": "code",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "tools_product_demo_run_sh__entry",
+      "community": 7,
+      "norm_label": "run.sh script"
+    },
+    {
+      "label": "HOME",
+      "file_type": "code",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L5",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "tools_product_demo_run_home",
+      "community": 7,
+      "norm_label": "home"
+    },
+    {
+      "label": "PATH",
+      "file_type": "code",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L6",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "_origin": "ast",
+      "id": "tools_product_demo_run_path",
+      "community": 7,
+      "norm_label": "path"
+    },
+    {
+      "label": "prospect_engine.ts",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine",
+      "community": 3,
+      "norm_label": "prospect_engine.ts"
+    },
+    {
+      "label": "slug",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_slug",
+      "community": 3,
+      "norm_label": "slug"
+    },
+    {
+      "label": "findEmails()",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_findemails",
+      "community": 3,
+      "norm_label": "findemails()"
+    },
+    {
+      "label": "Lead",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_lead",
+      "community": 3,
+      "norm_label": "lead"
+    },
+    {
+      "label": "leads",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_leads",
+      "community": 3,
+      "norm_label": "leads"
+    },
+    {
+      "label": "withEmail",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_withemail",
+      "community": 3,
+      "norm_label": "withemail"
+    },
+    {
+      "label": "without",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_without",
+      "community": 3,
+      "norm_label": "without"
+    },
+    {
+      "label": "jsonl",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_jsonl",
+      "community": 3,
+      "norm_label": "jsonl"
+    },
+    {
+      "label": "md",
+      "file_type": "code",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "tools_prospect_engine_prospect_engine_md",
+      "community": 3,
+      "norm_label": "md"
+    },
+    {
+      "label": "watch_youtube.sh",
+      "file_type": "code",
+      "source_file": "tools/sight/watch_youtube.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "id": "tools_sight_watch_youtube",
+      "community": 16,
+      "norm_label": "watch_youtube.sh"
+    },
+    {
+      "label": "watch_youtube.sh script",
+      "file_type": "code",
+      "source_file": "tools/sight/watch_youtube.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "id": "tools_sight_watch_youtube_sh__entry",
+      "community": 16,
+      "norm_label": "watch_youtube.sh script"
+    },
+    {
+      "label": "bridge.ts",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge",
+      "community": 0,
+      "norm_label": "bridge.ts"
+    },
+    {
+      "label": "MEDIA",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_media",
+      "community": 0,
+      "norm_label": "media"
+    },
+    {
+      "label": "OFFSET_FILE",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_offset_file",
+      "community": 0,
+      "norm_label": "offset_file"
+    },
+    {
+      "label": "ROUTES",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_routes",
+      "community": 0,
+      "norm_label": "routes"
+    },
+    {
+      "label": "env()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_env",
+      "community": 0,
+      "norm_label": "env()"
+    },
+    {
+      "label": "TOKEN",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_token",
+      "community": 0,
+      "norm_label": "token"
+    },
+    {
+      "label": "ALLOW",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_allow",
+      "community": 0,
+      "norm_label": "allow"
+    },
+    {
+      "label": "routeFor()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_routefor",
+      "community": 0,
+      "norm_label": "routefor()"
+    },
+    {
+      "label": "readOffset()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_readoffset",
+      "community": 0,
+      "norm_label": "readoffset()"
+    },
+    {
+      "label": "writeOffset()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_writeoffset",
+      "community": 0,
+      "norm_label": "writeoffset()"
+    },
+    {
+      "label": "claimSlot()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_claimslot",
+      "community": 0,
+      "norm_label": "claimslot()"
+    },
+    {
+      "label": "tg()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_tg",
+      "community": 0,
+      "norm_label": "tg()"
+    },
+    {
+      "label": "download()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_download",
+      "community": 0,
+      "norm_label": "download()"
+    },
+    {
+      "label": "handle()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_handle",
+      "community": 0,
+      "norm_label": "handle()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "tools_telegram_intake_bridge_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "CLAUDE.md \u2014 Schema & Operating Manual",
+      "file_type": "document",
+      "source_file": "core/CLAUDE.md",
+      "id": "core_claude",
+      "community": 4,
+      "norm_label": "claude.md \u2014 schema & operating manual"
+    },
+    {
+      "label": "Core README",
+      "file_type": "document",
+      "source_file": "core/README.md",
+      "id": "core_readme",
+      "community": 4,
+      "norm_label": "core readme"
+    },
+    {
+      "label": "Constitution \u2014 Governing Principles",
+      "file_type": "document",
+      "source_file": "core/constitution.md",
+      "id": "core_constitution",
+      "community": 4,
+      "norm_label": "constitution \u2014 governing principles"
+    },
+    {
+      "label": "Index \u2014 Core Knowledge Base",
+      "file_type": "document",
+      "source_file": "core/index.md",
+      "id": "core_index",
+      "community": 4,
+      "norm_label": "index \u2014 core knowledge base"
+    },
+    {
+      "label": "Log \u2014 Activity & Decisions",
+      "file_type": "document",
+      "source_file": "core/log.md",
+      "id": "core_log",
+      "community": 4,
+      "norm_label": "log \u2014 activity & decisions"
+    },
+    {
+      "label": "docs/ README",
+      "file_type": "document",
+      "source_file": "core/docs/README.md",
+      "id": "core_docs_readme",
+      "community": 17,
+      "norm_label": "docs/ readme"
+    },
+    {
+      "label": "intake/ README",
+      "file_type": "document",
+      "source_file": "core/intake/README.md",
+      "id": "core_intake_readme",
+      "community": 18,
+      "norm_label": "intake/ readme"
+    },
+    {
+      "label": "Scouted Skills (2026-06-20)",
+      "file_type": "document",
+      "source_file": "core/intake/scouted-skills-2026-06-20.md",
+      "id": "core_intake_scouted_skills_2026_06_20",
+      "community": 11,
+      "norm_label": "scouted skills (2026-06-20)"
+    },
+    {
+      "label": "Session Context (2026-06-20)",
+      "file_type": "document",
+      "source_file": "core/intake/session-2026-06-20-context.md",
+      "id": "core_intake_session_2026_06_20_context",
+      "community": 12,
+      "norm_label": "session context (2026-06-20)"
+    },
+    {
+      "label": "memory/ README",
+      "file_type": "document",
+      "source_file": "core/memory/README.md",
+      "id": "core_memory_readme",
+      "community": 19,
+      "norm_label": "memory/ readme"
+    },
+    {
+      "label": "outputs/ README",
+      "file_type": "document",
+      "source_file": "core/outputs/README.md",
+      "id": "core_outputs_readme",
+      "community": 20,
+      "norm_label": "outputs/ readme"
+    },
+    {
+      "label": "skills/ README",
+      "file_type": "document",
+      "source_file": "core/skills/README.md",
+      "id": "core_skills_readme",
+      "community": 21,
+      "norm_label": "skills/ readme"
+    },
+    {
+      "label": "tools/ README",
+      "file_type": "document",
+      "source_file": "core/tools/README.md",
+      "id": "core_tools_readme",
+      "community": 22,
+      "norm_label": "tools/ readme"
+    },
+    {
+      "label": "make_short README",
+      "file_type": "document",
+      "source_file": "core/tools/make_short/README.md",
+      "id": "core_tools_make_short_readme",
+      "community": 8,
+      "norm_label": "make_short readme"
+    },
+    {
+      "label": "product_demo README",
+      "file_type": "document",
+      "source_file": "core/tools/product_demo/README.md",
+      "id": "core_tools_product_demo_readme",
+      "community": 8,
+      "norm_label": "product_demo readme"
+    },
+    {
+      "label": "sight README",
+      "file_type": "document",
+      "source_file": "core/tools/sight/README.md",
+      "id": "core_tools_sight_readme",
+      "community": 8,
+      "norm_label": "sight readme"
+    },
+    {
+      "label": "Karpathy LLM Wiki Pattern",
+      "file_type": "concept",
+      "source_file": "core/CLAUDE.md",
+      "id": "karpathy_llm_wiki",
+      "community": 4,
+      "norm_label": "karpathy llm wiki pattern"
+    },
+    {
+      "label": "clawbot-autotube Project",
+      "file_type": "concept",
+      "source_file": "core/index.md",
+      "id": "clawbot_autotube",
+      "community": 4,
+      "norm_label": "clawbot-autotube project"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "concept",
+      "source_file": "core/intake/scouted-skills-2026-06-20.md",
+      "id": "safishamsi_graphify",
+      "community": 11,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "HeyGen v3 API",
+      "file_type": "concept",
+      "source_file": "core/intake/session-2026-06-20-context.md",
+      "id": "heygen_v3",
+      "community": 12,
+      "norm_label": "heygen v3 api"
+    }
+  ],
+  "links": [
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/catalog/build_catalog.sh",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_catalog_build_catalog",
+      "target": "tools_catalog_build_catalog_desc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/catalog/build_catalog.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_catalog_build_catalog",
+      "target": "tools_catalog_build_catalog_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_comment_bot_comment_bot",
+      "target": "tools_comment_bot_comment_bot_creds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_comment_bot_comment_bot",
+      "target": "tools_comment_bot_comment_bot_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_comment_bot_comment_bot_creds",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/comment_bot/comment_bot.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_comment_bot_comment_bot_main",
+      "target": "tools_comment_bot_comment_bot_creds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode",
+      "target": "tools_make_episode_episode_ff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode",
+      "target": "tools_make_episode_episode_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode",
+      "target": "tools_make_episode_episode_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode",
+      "target": "tools_make_episode_episode_sh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode_main",
+      "target": "tools_make_episode_episode_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode_ff",
+      "target": "tools_make_episode_episode_sh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode_main",
+      "target": "tools_make_episode_episode_sh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/episode.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_episode_main",
+      "target": "tools_make_episode_episode_ff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/loop.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_loop",
+      "target": "tools_make_episode_loop_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/loop.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_loop",
+      "target": "tools_make_episode_loop_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/loop.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_loop_main",
+      "target": "tools_make_episode_loop_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_write_script",
+      "target": "tools_make_episode_write_script_anthropic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_write_script",
+      "target": "tools_make_episode_write_script_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_write_script",
+      "target": "tools_make_episode_write_script_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_write_script_anthropic",
+      "target": "tools_make_episode_write_script_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_episode/write_script.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_episode_write_script_main",
+      "target": "tools_make_episode_write_script_anthropic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_short/make_ass.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_short_make_ass",
+      "target": "tools_make_short_make_ass_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_short/make_short.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_short_make_short",
+      "target": "tools_make_short_make_short_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/make_short/scene_plan.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_make_short_scene_plan",
+      "target": "tools_make_short_scene_plan_flush",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_chromium",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_dismissconsent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_now",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_rand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_recdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_smoothmoveto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_smoothscroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_spec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_t0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_timeline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder",
+      "target": "tools_product_demo_demo_recorder_vids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/demo_recorder.mjs",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_demo_recorder_smoothmoveto",
+      "target": "tools_product_demo_demo_recorder_rand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo",
+      "target": "tools_product_demo_make_demo_ff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo",
+      "target": "tools_product_demo_make_demo_fit_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo",
+      "target": "tools_product_demo_make_demo_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo",
+      "target": "tools_product_demo_make_demo_narration_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_rationale_1",
+      "target": "tools_product_demo_make_demo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_fit_step",
+      "target": "tools_product_demo_make_demo_ff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_main",
+      "target": "tools_product_demo_make_demo_ff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_main",
+      "target": "tools_product_demo_make_demo_narration_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_rationale_46",
+      "target": "tools_product_demo_make_demo_narration_segments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_fit_step",
+      "target": "path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_main",
+      "target": "tools_product_demo_make_demo_fit_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_rationale_64",
+      "target": "tools_product_demo_make_demo_fit_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/make_demo.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_make_demo_main",
+      "target": "path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_run",
+      "target": "tools_product_demo_run_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_run",
+      "target": "tools_product_demo_run_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/product_demo/run.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_product_demo_run",
+      "target": "tools_product_demo_run_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_findemails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_jsonl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_lead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_leads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_slug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_withemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/prospect_engine/prospect_engine.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_prospect_engine_prospect_engine",
+      "target": "tools_prospect_engine_prospect_engine_without",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/sight/watch_youtube.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_sight_watch_youtube",
+      "target": "tools_sight_watch_youtube_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_allow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_claimslot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_download",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_env",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_handle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_media",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_offset_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_readoffset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_routefor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_tg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_token",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge",
+      "target": "tools_telegram_intake_bridge_writeoffset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_handle",
+      "target": "tools_telegram_intake_bridge_routefor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_main",
+      "target": "tools_telegram_intake_bridge_readoffset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_main",
+      "target": "tools_telegram_intake_bridge_writeoffset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_main",
+      "target": "tools_telegram_intake_bridge_claimslot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_download",
+      "target": "tools_telegram_intake_bridge_tg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_handle",
+      "target": "tools_telegram_intake_bridge_tg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_handle",
+      "target": "tools_telegram_intake_bridge_download",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/telegram_intake/bridge.ts",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tools_telegram_intake_bridge_main",
+      "target": "tools_telegram_intake_bridge_handle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/CLAUDE.md",
+      "source": "core_claude",
+      "target": "core_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/CLAUDE.md",
+      "source": "core_claude",
+      "target": "core_log"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/CLAUDE.md",
+      "source": "core_claude",
+      "target": "karpathy_llm_wiki"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/constitution.md",
+      "source": "core_constitution",
+      "target": "core_claude"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/README.md",
+      "source": "core_readme",
+      "target": "core_claude"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/README.md",
+      "source": "core_readme",
+      "target": "core_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/index.md",
+      "source": "core_index",
+      "target": "core_constitution"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/index.md",
+      "source": "core_index",
+      "target": "clawbot_autotube"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/intake/scouted-skills-2026-06-20.md",
+      "source": "core_intake_scouted_skills_2026_06_20",
+      "target": "safishamsi_graphify"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/intake/session-2026-06-20-context.md",
+      "source": "core_intake_session_2026_06_20_context",
+      "target": "heygen_v3"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "core/tools/product_demo/README.md",
+      "source": "core_tools_product_demo_readme",
+      "target": "core_tools_make_short_readme"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "core/tools/sight/README.md",
+      "source": "core_tools_sight_readme",
+      "target": "core_tools_make_short_readme"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "karpathy_wiki_structure",
+      "label": "Karpathy LLM Wiki Implementation",
+      "nodes": [
+        "core_claude",
+        "core_index",
+        "core_log",
+        "core_intake_readme",
+        "core_docs_readme",
+        "core_memory_readme",
+        "core_outputs_readme"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "core/CLAUDE.md"
+    },
+    {
+      "id": "core_toolset",
+      "label": "Core Video Automation Tools",
+      "nodes": [
+        "core_tools_make_short_readme",
+        "core_tools_product_demo_readme",
+        "core_tools_sight_readme"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "core/tools/README.md"
+    }
+  ],
+  "built_at_commit": "50d1421495d6f5d3a50eaadc7354c74c8f14133a"
+}
